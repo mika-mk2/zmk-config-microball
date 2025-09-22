@@ -16,7 +16,7 @@
     combos {
         compatible = "zmk,combos";
 
-        IMEchange {
+        KANAchange {
             bindings = <&kp LG(SPACE)>;
             key-positions = <39 40>;
         };
@@ -34,6 +34,11 @@
         BT_company {
             bindings = <&bt BT_SEL 1>;
             key-positions = <34 42>;
+        };
+
+        KO-ENchange {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <28 29>;
         };
     };
 
@@ -62,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q              &kp W     &kp E               &kp R      &kp T                                             &lt 3 Y    &kp U  &kp I      &kp O    &kp P
-&kp A              &kp S     &kp D               &kp F      &lt 2 G    &kp LS(LG(S))           &kp SQT        &lt 1 H    &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z              &kp X     &kp C               &kp V      &kp B      &kp MINUS               &kp EQUAL      &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LCTRL AT_SIGN  &kp LEFT  &mt LEFT_ALT RIGHT  &kp GRAVE  &kp SPACE  &mt LEFT_SHIFT TAB      &kp BACKSPACE  &kp ENTER                             &kp DEL
+&kp Q              &kp W     &kp E               &kp R      &kp T                                                 &lt 3 Y    &kp U  &kp I      &kp O    &kp P
+&kp A              &kp S     &kp D               &kp F      &lt 2 G    &kp LS(LG(S))           &kp SQT            &lt 1 H    &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z              &kp X     &kp C               &kp V      &kp B      &kp MINUS               &mt RIGHT_SHIFT B  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LCTRL AT_SIGN  &kp LEFT  &mt LEFT_ALT RIGHT  &kp GRAVE  &kp SPACE  &mt LEFT_SHIFT TAB      &kp BACKSPACE      &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
