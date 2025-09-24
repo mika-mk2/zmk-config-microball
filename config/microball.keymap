@@ -21,9 +21,9 @@
             key-positions = <39 40>;
         };
 
-        plus {
+        PLUS_combo {
             bindings = <&kp PLUS>;
-            key-positions = <9 21>;
+            key-positions = <4 3>;
         };
 
         BT_home {
@@ -44,6 +44,31 @@
         hold_Layer1 {
             bindings = <&lt 1 EXCLAMATION>;
             key-positions = <16 28>;
+        };
+
+        TAB_combo {
+            bindings = <&kp TAB>;
+            key-positions = <4 3>;
+        };
+
+        AND_combo {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <9 8>;
+        };
+
+        ASTERISK_combo {
+            bindings = <&kp ASTERISK>;
+            key-positions = <5 6>;
+        };
+
+        LPAR_combo {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <27 5>;
+        };
+
+        RPAR_combo {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <27 6>;
         };
     };
 
@@ -72,13 +97,13 @@
 
         default_layer {
             bindings = <
-&kp Q              &kp W      &kp E                    &kp R        &kp T                                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A              &kp S      &kp D                    &kp F        &kp G      &kp LS(LG(S))           &kp SQT                    &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z              &kp X      &kp C                    &kp V        &kp B      &kp MINUS               &kp B                      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LCTRL AT_SIGN  &kp GRAVE  &mt LEFT_ALT LEFT_ARROW  &lt 2 RIGHT  &kp SPACE  &mt LEFT_SHIFT TAB      &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER                             &kp DEL
+&kp Q              &kp W      &kp E                    &kp R        &kp T                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A              &kp S      &kp D                    &kp F        &kp G      &kp LS(LG(S))       &kp SQT                    &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z              &kp X      &kp C                    &kp V        &kp B      &kp MINUS           &kp B                      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LCTRL AT_SIGN  &kp GRAVE  &mt LEFT_ALT LEFT_ARROW  &lt 2 RIGHT  &kp SPACE  &kp LEFT_SHIFT      &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         FUNCTION {
