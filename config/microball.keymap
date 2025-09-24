@@ -103,7 +103,7 @@
 &mt LCTRL AT_SIGN  &kp GRAVE  &mt LEFT_ALT LEFT_ARROW  &lt 2 RIGHT  &kp SPACE  &kp LEFT_SHIFT      &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
