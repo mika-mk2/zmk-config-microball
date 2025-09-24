@@ -48,7 +48,7 @@
 
         TAB_combo {
             bindings = <&kp TAB>;
-            key-positions = <4 3>;
+            key-positions = <4 14>;
         };
 
         AND_combo {
