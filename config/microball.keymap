@@ -6,6 +6,7 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
 &mt {
     flavor = "balanced";
@@ -82,6 +83,13 @@
     };
 
     behaviors {
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            // 追加: スクロールのタップ時間を設定 (20ms)
+            tap-ms = <20>;
+        };
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -103,7 +111,7 @@
 &mt LCTRL AT_SIGN  &kp GRAVE  &mt LEFT_ALT LEFT_ARROW  &lt 2 RIGHT  &kp SPACE  &kp LEFT_SHIFT      &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
