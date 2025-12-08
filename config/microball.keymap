@@ -53,7 +53,7 @@
         };
 
         BTcombo {
-            bindings = <&none>;
+            bindings = <&mo 2>;
             key-positions = <5 40>;
         };
     };
