@@ -17,14 +17,9 @@
     combos {
         compatible = "zmk,combos";
 
-        KANAchange {
+        LANGchange {
             bindings = <&kp LG(SPACE)>;
             key-positions = <39 40>;
-        };
-
-        PLUS_combo {
-            bindings = <&kp PLUS>;
-            key-positions = <4 3>;
         };
 
         BT_home {
@@ -37,13 +32,13 @@
             key-positions = <34 42>;
         };
 
-        KO-ENchange {
+        RALTcombo {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <28 41>;
         };
 
-        hold_Layer1 {
-            bindings = <&lt 1 EXCLAMATION>;
+        EXCLcombo {
+            bindings = <&kp EXCL>;
             key-positions = <16 28>;
         };
 
@@ -52,29 +47,14 @@
             key-positions = <4 14>;
         };
 
-        AND_combo {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <9 8>;
-        };
-
-        ASTERISK_combo {
-            bindings = <&kp ASTERISK>;
-            key-positions = <5 6>;
-        };
-
-        LPAR_combo {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <27 5>;
-        };
-
-        RPAR_combo {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <27 6>;
-        };
-
-        to_Layer4 {
+        MOUSEcombo {
             bindings = <&to 4>;
-            key-positions = <22 34>;
+            key-positions = <4 39>;
+        };
+
+        BTcombo {
+            bindings = <&none>;
+            key-positions = <5 40>;
         };
     };
 
@@ -112,10 +92,10 @@
 
         default_layer {
             bindings = <
-&kp Q              &kp W        &kp E              &kp R        &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A              &kp S        &kp D              &kp F        &kp G      &kp PRINTSCREEN            &kp SQT                    &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z              &kp X        &kp C              &kp V        &kp B      &lt 2 MINUS                &kp B                      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LCTRL AT_SIGN  &lt 4 GRAVE  &mt LEFT_ALT PLUS  &lt 1 MINUS  &kp SPACE  &mt LEFT_SHIFT DELETE      &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER                             &kp ESCAPE
+&kp Q              &kp W        &kp E              &kp R       &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A              &kp S        &kp D              &kp F       &kp G      &kp PRINTSCREEN            &kp SQT                    &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z              &kp X        &kp C              &kp V       &kp B      &kp MINUS                  &kp B                      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LCTRL AT_SIGN  &lt 4 GRAVE  &mt LEFT_ALT PLUS  &lt 1 AMPS  &kp SPACE  &mt LEFT_SHIFT DELETE      &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -123,14 +103,14 @@
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2    &kp F3    &kp F4     &kp F5                                           &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3      &kp NUMBER_4       &kp N5
-&kp F6   &kp F7    &kp F8    &kp F9     &kp F10      &trans             &kp EXCLAMATION  &kp NUMBER_6          &kp N7                 &kp N8            &kp N9             &kp N0
-&kp F11  &kp F12   &kp DLLR  &kp CARET  &kp PERCENT  &kp AMPERSAND      &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp AT   &kp PIPE  &kp PLUS  &trans     &kp HASH     &kp ASTERISK       &kp LEFT_BRACE   &kp RIGHT_BRACE                                                                   &to 0
+&kp F1   &kp F2    &kp F3    &kp F4     &kp F5                                          &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3      &kp NUMBER_4       &kp N5
+&kp F6   &kp F7    &kp F8    &kp F9     &kp F10      &trans            &kp EXCLAMATION  &kp NUMBER_6          &kp N7                 &kp N8            &kp N9             &kp N0
+&kp F11  &kp F12   &kp DLLR  &kp CARET  &kp PERCENT  &kp MINUS         &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp AT   &kp PIPE  &kp PLUS  &trans     &kp HASH     &kp ASTERISK      &kp LEFT_BRACE   &kp RIGHT_BRACE                                                                   &to 0
             >;
         };
 
-        NUM {
+        BT {
             bindings = <
 &trans        &trans        &trans        &trans        &trans                                  &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans
